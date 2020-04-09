@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-null animated fadeIn">
+        <form class="form-inline">
+            <a href="index.html" style="color: white;margin-left: 1em;" class="hvr-grow" style="margin-left: 2em;">
+                URL
+            </a>
+            <button id="butt" href="extension.html" style="margin-left: 1.5em; color:white;" class="hvr-grow">
+                Extension
+            </button>
+            <a href="string.html" style="margin-left: 1.5em; color:white;" class="hvr-grow">
+                String
+            </a>
+        </form>
+    </nav>
+    <div class="vertical">
+        <div id="content">
+            <div class="card animated fadeIn" style="width: 25rem;">
+                <img src="assets/files.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                    <form>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </form>
+                    Choose a file and then hit the button below
+                    <a onclick="ext();return false;"><button id="butt" class="hvr-grow"
+                            style="outline: none; margin-top: 1em;"> Get
+                            File Ext</button></a>
+                    <h4>
+                        <p id="fileext" style="margin-top: 1em;"></p>
+                    </h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

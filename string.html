@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="script/script.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-null animated fadeIn">
+        <form class="form-inline">
+            <a href="index.html" style="margin-left: 1em; color:white;" class="hvr-grow">
+                URL
+            </a>
+            <a href="extension.html" style="margin-left: 1.5em; color:white;" class="hvr-grow">
+                Extension
+            </a>
+            <button id="butt" style="margin-left: 1.5em; color:white;" class="hvr-grow">
+                String
+            </button>
+        </form>
+    </nav>
+
+
+
+
+    <div class="vertical">
+        <div id="content">
+            <div class="card animated fadeIn" style="width: 25rem;">
+                <img src="assets/backend.webp" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="stringInput" id="label">Enter String</label>
+                            <input type="text" class="form-control" id="stringInput" aria-describedby="Help">
+                            <small id="Help" class="form-text text-muted">If a string "Script" is present at 5th
+                                position (index 4) in the given string, the output will trim off the string "Script".
+                                Else, the output will match the input</small>
+                        </div>
+                    </form>
+                    <a href="" onclick="str();return false;"><button id="butt" class="hvr-grow"
+                            style="outline: none;">Manipulate String</button></a>
+                    <div class="alert alert-primary" role="alert" style="margin-top: 1em;" id="title">
+                        A simple primary alert—check it out!
+                    </div>
+                    <br>
+                    <small id="mod" class="form-text text-muted" style="display: none;">String is MODIFIED</small>
+                    <small id="notmod" class="form-text text-muted" style="display: none;">String is NOT
+                        modified</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
